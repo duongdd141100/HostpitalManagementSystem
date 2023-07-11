@@ -1,0 +1,12 @@
+.content .search {
+    justify-content: right;
+    padding-bottom: 20px;
+}
+
+.patient-name, .doctor-name, .nurse-name {
+    text-align: left;
+}
+
+.diagnosis, .medical-plan, .fee, .report, .no-record {
+    text-align: center;
+}

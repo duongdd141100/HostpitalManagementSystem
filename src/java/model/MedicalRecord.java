@@ -13,11 +13,21 @@ public class MedicalRecord {
     
     private Double fee;
     
-    private Long patientId;
+    private String patientName;
     
-    private Long doctorId;
+    private String doctorName;
     
-    private Long Nurse;
+    private String nurseName;
+
+    public MedicalRecord(Long id, String diagnosis, String medicalPlan, Double fee, String patientName, String doctorName, String nurseName) {
+        this.id = id;
+        this.diagnosis = diagnosis;
+        this.medicalPlan = medicalPlan;
+        this.fee = fee;
+        this.patientName = patientName;
+        this.doctorName = doctorName;
+        this.nurseName = nurseName;
+    }
 
     public Long getId() {
         return id;
@@ -35,16 +45,15 @@ public class MedicalRecord {
         return fee;
     }
 
-    public Long getPatientId() {
-        return patientId;
+    public String getPatientName() {
+        return patientName;
     }
 
-    public Long getDoctorId() {
-        return doctorId;
+    public String getDoctorName() {
+        return doctorName;
     }
 
-    public Long getNurse() {
-        return Nurse;
+    public String getNurseName() {
+        return nurseName;
     }
-
 }

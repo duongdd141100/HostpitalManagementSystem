@@ -55,7 +55,7 @@ public class MedicalRecordDAO extends DBContext{
             }
             return medicalRecords;
         } catch (Exception e) {
-            System.out.println("ERROR MedicalRecordDAO.findAll()" + e.getMessage());
+            System.out.println("ERROR MedicalRecordDAO.findBySearchValue()" + e.getMessage());
             return null;
         }
     }

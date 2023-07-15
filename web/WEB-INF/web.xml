@@ -4,9 +4,17 @@
         <servlet-name>MedicalRecordViewController</servlet-name>
         <servlet-class>controller.MedicalRecordViewController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ReportViewController</servlet-name>
+        <servlet-class>controller.ReportViewController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MedicalRecordViewController</servlet-name>
         <url-pattern>/medical-records</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReportViewController</servlet-name>
+        <url-pattern>/report</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

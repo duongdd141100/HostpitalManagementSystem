@@ -1,0 +1,6 @@
+.content div {
+    justify-content: left;
+}
+.content .report {
+    flex-direction: column;
+}

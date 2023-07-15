@@ -15,6 +15,14 @@ public class Report {
     
     private Long reviewer;
 
+    public Report(Long id, String doctorNotes, String nurseNotes, Long medicalRecordId, Long reviewer) {
+        this.id = id;
+        this.doctorNotes = doctorNotes;
+        this.nurseNotes = nurseNotes;
+        this.medicalRecordId = medicalRecordId;
+        this.reviewer = reviewer;
+    }
+
     public Long getId() {
         return id;
     }

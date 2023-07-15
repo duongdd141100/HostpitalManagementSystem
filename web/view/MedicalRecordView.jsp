@@ -45,7 +45,7 @@
                             <td class="fee">$ ${mr.fee}</td>
                             <td class="doctor-name">${mr.doctorName}</td>
                             <td class="nurse-name">${mr.nurseName}</td>
-                            <td class="report"><a href="report/${mr.id}">View</a></td>
+                            <td class="report"><a href="report?record-id=${mr.id}">View</a></td>
                         </tr>
                     </c:forEach>
                 </table>

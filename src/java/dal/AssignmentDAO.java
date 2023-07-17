@@ -17,7 +17,7 @@ public class AssignmentDAO extends DBContext{
 
     public List<Assignment> getAssignment() {
         List<Assignment> list = new ArrayList<>();
-        String sql = "SELECT tbl_patient.name as PatientName ,tbl_bed.name as BedName, tbl_room.name as RoomName, e1.name as Doctor , e2.name as Nurse\n"
+        String sql = "SELECT tbl_patient.name as PatientName ,tbl_bed.name as BedName, tbl_room.name as RoomName, e1.name as doctorName , e2.name as nurseName\n"
                 + "FROM tbl_medical_record INNER JOIN \n"
                 + "	 tbl_patient ON tbl_medical_record.id = tbl_patient.id \n"
                 + "	 INNER JOIN tbl_employee e1 ON e1.id = tbl_medical_record.doctor_id\n"

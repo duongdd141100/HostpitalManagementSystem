@@ -11,29 +11,31 @@
     </head>
     <body>
         <jsp:include page="Header.jsp"/>
-        <div>
+        <div class="title">
             <h1>Assignment</h1>
         </div>
         
-        <div class="table">
-            <table>
-                <tr>
-                    <th>Patient</th>
-                    <th>Bed</th>
-                    <th>Room</th>
-                    <th>Doctor</th>
-                    <th>Nurse</th>
-                </tr>
-                <c:forEach items="${listA}" var="o">
+        <div class="content">
+            <div class="table">       
+                <table>
                     <tr>
-                        <td class="Patient Name">${o.patientName}</td>
-                        <td class="Room Name">${o.roomName}</td>
-                        <td class="Bed Name">${o.bedName}</td>
-                        <td class="Doctor Name">${o.doctorName}</td>
-                        <td class="Nurse Name">${o.nurseName}</td>
+                        <th>Patient</th>
+                        <th>Bed</th>
+                        <th>Room</th>
+                        <th>Doctor</th>
+                        <th>Nurse</th>
                     </tr>
-                </c:forEach>
-            </table>
+                    <c:forEach items="${listA}" var="o">
+                        <tr>
+                            <td class="Patient Name">${o.patientName}</td>
+                            <td class="Room Name">${o.roomName}</td>
+                            <td class="Bed Name">${o.bedName}</td>
+                            <td class="Doctor Name">${o.doctorName}</td>
+                            <td class="Nurse Name">${o.nurseName}</td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </div>
         </div>
     </body>
 </html>

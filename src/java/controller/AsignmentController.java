@@ -8,10 +8,10 @@ package controller;
 import dal.AssignmentDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 import model.Assignment;
@@ -60,7 +60,7 @@ public class AsignmentController extends HttpServlet {
         
         AssignmentDAO dao = new AssignmentDAO();
         List<Assignment>  list = dao.getAssignment();
-        request.setAttribute("listA", dao);
+        request.setAttribute("listA", list);
         request.getRequestDispatcher("/view/Assignment.jsp").forward(request, response);
         
     } 

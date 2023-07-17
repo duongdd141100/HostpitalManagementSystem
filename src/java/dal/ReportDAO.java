@@ -25,4 +25,9 @@ public class ReportDAO extends DBContext{
             return null;
         }
     }
+    public static void main(String[] args) {
+        ReportDAO report_dao = new ReportDAO();
+        
+    }
+    
 }

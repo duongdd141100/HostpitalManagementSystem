@@ -12,6 +12,22 @@
         <servlet-name>AsignmentController</servlet-name>
         <servlet-class>controller.AsignmentController</servlet-class>
     </servlet>
+        <servlet>
+        <servlet-name>PatientController</servlet-name>
+        <servlet-class>controller.PatientController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PatientDetailController</servlet-name>
+        <servlet-class>controller.PatientDetailController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RoomController</servlet-name>
+        <servlet-class>controller.RoomController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddRoomController</servlet-name>
+        <servlet-class>controller.AddRoomController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MedicalRecordViewController</servlet-name>
         <url-pattern>/medical-records</url-pattern>
@@ -23,6 +39,22 @@
     <servlet-mapping>
         <servlet-name>AsignmentController</servlet-name>
         <url-pattern>/assignment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PatientController</servlet-name>
+        <url-pattern>/patient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PatientDetailController</servlet-name>
+        <url-pattern>/patient-detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RoomController</servlet-name>
+        <url-pattern>/room</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddRoomController</servlet-name>
+        <url-pattern>/add-room</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

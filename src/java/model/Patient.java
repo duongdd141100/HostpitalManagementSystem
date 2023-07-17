@@ -13,7 +13,33 @@ public class Patient {
     
     private String address;
     
-    private Long bedId;
+    private Bed bed;
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setBed(Bed bed) {
+        this.bed = bed;
+    }
+    
+    
+
+    public Bed getBed() {
+        return bed;
+    }
 
     public Long getId() {
         return id;
@@ -31,7 +57,5 @@ public class Patient {
         return address;
     }
 
-    public Long getBedId() {
-        return bedId;
-    }
+    
 }

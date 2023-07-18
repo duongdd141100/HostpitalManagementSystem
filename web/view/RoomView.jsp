@@ -22,7 +22,7 @@
          <div class="content">
              <div class="">
                 
-                 <a href="../add-room">Add New Room</a>
+                 <a href="add-room">Add New Room</a>
             </div>
              <div class="table">            
                 <table>
